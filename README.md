@@ -4,6 +4,16 @@
 [![CurseForge downloads](http://cf.way2muchnoise.eu/full_633402_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/carpet-sky-additions)
 [![Modrinth downloads](https://img.shields.io/modrinth/dt/3oX3JnAP?label=Modrinth%20Downloads)](https://modrinth.com/mod/carpet-sky-additions)
 
+## About this Fork
+This fork of [jsorrel/CarpetSkyAdditions](https://github.com/jsorrell/CarpetSkyAdditions) adds the new world preset "EndBlock" (working title). This was inspired by [Jokeypokey](https://www.youtube.com/user/gugglewuggle) on YouTube and their OneBlock Survival series. Other than in the original video series you don't start with any blocks in your inventory, so you will have to do the dragon fight with your bare hands (and with ender pearls).
+
+The difference to SkyBlock is that the end dimension generates in the regular way (with islands, cities, etc.) and you start on an activated end portal instead of an island with a tree. For this reason I gave endermen a 1% chance to spawn with a grass block in the overworld, making grass available.
+
+## Warning
+This challange might not be doable on every seed. Before playing I highly recommend to check that your seed fulfills the followin:
+- The obsidian platform in the end should not be mid-air, you should be able to reach the main end island without blocks. In theory you could lure an enderman onto your platform, kill it and enderpearl over to the main island but I really don't recommend playing on such a seed.
+- There should be an end city with a pickaxe as loot or with a ship reachable with *only* enderpearls (no blocks) from the end gateway that generates after the dragon fight. Otherwise you will not be able to proceed after you defeated the dragon.
+
 **English** | [中文](docs/zh_cn/README.md)
 
 Carpet Sky Additions is a module for [fabric-carpet](https://github.com/gnembon/fabric-carpet)
