@@ -1,9 +1,5 @@
 # Carpet Sky Additions (Previously SkyBlock)
 
-[![GitHub downloads](https://img.shields.io/github/downloads/jsorrell/CarpetSkyAdditions/total?label=Github%20downloads&logo=github)](https://github.com/jsorrell/CarpetSkyAdditions/releases)
-[![CurseForge downloads](http://cf.way2muchnoise.eu/full_633402_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/carpet-sky-additions)
-[![Modrinth downloads](https://img.shields.io/modrinth/dt/3oX3JnAP?label=Modrinth%20Downloads)](https://modrinth.com/mod/carpet-sky-additions)
-
 ## About this Fork
 This fork of [jsorrel/CarpetSkyAdditions](https://github.com/jsorrell/CarpetSkyAdditions) adds the new world preset "EndBlock" (working title). This was inspired by [Jokeypokey](https://www.youtube.com/user/gugglewuggle) on YouTube and their OneBlock Survival series. Other than in the original video series you don't start with any blocks in your inventory, so you will have to do the dragon fight with your bare hands (and with ender pearls).
 
