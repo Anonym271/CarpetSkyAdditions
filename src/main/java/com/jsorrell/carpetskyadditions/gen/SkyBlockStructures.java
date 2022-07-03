@@ -218,4 +218,41 @@ public class SkyBlockStructures {
       structure.place(world, structureOrigin, worldSpawn, new StructurePlacementData(), random, Block.NOTIFY_LISTENERS);
     }
   }
+
+  public record SpawnEndPortal(BlockPos worldSpawn) {
+    private record PortalBlock(int x, int z, Direction facing) {}
+    private static final PortalBlock[] portalFrameBlocks = {
+      new PortalBlock(-1, 0, Direction.SOUTH),
+      new PortalBlock(0, 0, Direction.SOUTH),
+      new PortalBlock(1, 0, Direction.SOUTH),
+      new PortalBlock(2, 1, Direction.WEST),
+      new PortalBlock(2, 2, Direction.WEST),
+      new PortalBlock(2, 3, Direction.WEST),
+      new PortalBlock(-1, 4, Direction.NORTH),
+      new PortalBlock(0, 4, Direction.NORTH),
+      new PortalBlock(1, 4, Direction.NORTH),
+      new PortalBlock(-2, 1, Direction.EAST),
+      new PortalBlock(-2, 2, Direction.EAST),
+      new PortalBlock(-2, 3, Direction.EAST),
+    };
+
+    private void addBlock(ServerWorldAccess world, BlockState block, int x, int y, int z)
+    {
+      world.setBlockState(worldSpawn.add(x, y, z), block, Block.NOTIFY_LISTENERS);
+    }
+
+    public void generate(ServerWorldAccess world, Random random) {
+      for (PortalBlock p : portalFrameBlocks) {
+        addBlock(world, Blocks.END_PORTAL_FRAME.getDefaultState()
+            .with(EndPortalFrameBlock.FACING, p.facing)
+            .with(EndPortalFrameBlock.EYE, true),
+          p.x, 0, p.z);
+      }
+      for (int x = -1; x < 2; x++) {
+        for (int z = 1; z < 4; z++) {
+          addBlock(world, Blocks.END_PORTAL.getDefaultState(), x, 0, z);
+        }
+      }
+    }
+  }
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "carpetskyadditions:skyblock"
+    "carpetskyadditions:skyblock",
+    "carpetskyadditions:endblock"
   ]
 }
